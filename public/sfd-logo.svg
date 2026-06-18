@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 80">
+  <defs>
+    <linearGradient id="logoGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1E90FF" />
+      <stop offset="100%" stop-color="#0059B3" />
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="220" height="80" rx="18" fill="transparent" />
+
+  <text x="12" y="46" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="800" fill="url(#logoGradient)">sfd</text>
+  <text x="12" y="70" font-family="Inter, Arial, sans-serif" font-size="14" fill="#60A5FA" letter-spacing="0.1em">TECH</text>
+
+  <rect x="88" y="14" width="8" height="8" rx="2" fill="#1E90FF" />
+  <rect x="102" y="6" width="8" height="8" rx="2" fill="#1E90FF" />
+  <rect x="116" y="22" width="8" height="8" rx="2" fill="#1E90FF" />
+  <rect x="130" y="10" width="8" height="8" rx="2" fill="#60A5FA" />
+</svg>

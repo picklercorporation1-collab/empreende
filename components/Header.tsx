@@ -47,13 +47,12 @@ export default function Header() {
             className="flex-shrink-0"
           >
             <div className="flex items-center gap-3">
-              <Link href="/" className="flex items-center space-x-2 group">
-                <div className="relative w-10 h-10">
-                  <div className="absolute inset-0 bg-gradient-to-r from-accent to-blue-500 rounded-lg blur-sm group-hover:blur-md transition-all" />
-                  <div className="relative bg-primary rounded-lg w-full h-full flex items-center justify-center">
-                    <span className="text-accent font-bold text-lg">S</span>
-                  </div>
-                </div>
+              <Link href="/" className="flex items-center space-x-3 group">
+                <img
+                  src="/sfd-logo.svg"
+                  alt="SFD Tech"
+                  className="h-10 w-auto"
+                />
                 <span className="hidden sm:inline text-white font-bold text-lg group-hover:text-accent transition-colors">
                   SFD Tech
                 </span>
