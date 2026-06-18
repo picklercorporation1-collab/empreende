@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { FaBars, FaTimes } from 'react-icons/fa';
@@ -47,13 +48,15 @@ export default function Header() {
             className="flex-shrink-0"
           >
             <div className="flex items-center gap-3">
-              <Link href="/" className="flex items-center space-x-3 group">
-                <img
+              <Link href="/" className="flex items-center gap-3 group">
+                <Image
                   src="/sfd-logo.svg"
                   alt="SFD Tech"
-                  className="h-10 w-auto"
+                  width={40}
+                  height={40}
+                  className="rounded-lg"
                 />
-                <span className="hidden sm:inline text-white font-bold text-lg group-hover:text-accent transition-colors">
+                <span className="text-white font-bold text-lg group-hover:text-accent transition-colors">
                   SFD Tech
                 </span>
               </Link>
