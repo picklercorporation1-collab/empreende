@@ -77,24 +77,18 @@ function DifferentialCard({ icon: Icon, title, description, color, index }: Diff
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.05 * index, duration: 0.5 }}
-      whileHover={{ y: -5 }}
+      whileHover={{ y: -2 }}
       className="group"
     >
-      <div className="relative overflow-hidden rounded-2xl border border-accent/20 bg-secondary/40 backdrop-blur-xl p-6 h-full hover:border-accent/50 transition-all duration-300">
-        {/* Animated background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300" />
-
-        {/* Content */}
-        <div className="relative">
-          <Icon className={`${color} text-3xl mb-4 group-hover:scale-110 transition-transform duration-300`} />
-          <h3 className="text-lg font-bold text-white mb-2 group-hover:text-accent transition-colors duration-300">
-            {title}
-          </h3>
-          <p className="text-gray-400 text-sm">{description}</p>
+      <div className="relative rounded-2xl border border-white/10 bg-slate-950/90 p-6 h-full shadow-xl shadow-black/10 transition-transform duration-300 hover:-translate-y-1">
+        <div className="relative mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-white/10 text-white">
+          <Icon className={`text-2xl ${color}`} />
         </div>
 
-        {/* Neon glow effect */}
-        <div className={`absolute -bottom-1 -right-1 w-20 h-20 ${color.replace('text', 'bg')}/20 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-all duration-300`} />
+        <div>
+          <h3 className="text-xl font-semibold text-white mb-2">{title}</h3>
+          <p className="text-gray-400 leading-relaxed text-sm">{description}</p>
+        </div>
       </div>
     </motion.div>
   );
